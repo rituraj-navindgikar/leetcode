@@ -19,15 +19,12 @@ public:
         while(count != a-1){
             temp1 = temp1->next;
             count++;
-        }
-        
+        }   
         tempb = temp1;
-
         while(count != b+1) {
             tempb = tempb->next;
             count++;
         }
-
         temp1->next = temp2;
         while(temp2->next != NULL) {
             temp2 = temp2->next;
