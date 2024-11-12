@@ -2,8 +2,6 @@ class Solution {
 public:
     bool primeSubOperation(vector<int>& nums) {
         int maxElement = *max_element(nums.begin(), nums.end());
-
-        // Create Sieve of Eratosthenes array to identify prime numbers
         vector<bool> sieve(maxElement + 1, true);
         sieve[1] = false;
         for (int i = 2; i <= sqrt(maxElement + 1); i++) {
@@ -13,8 +11,6 @@ public:
                 }
             }
         }
-        
-        // Check if array can be made strictly increasing by subtracting prime numbers
         int currValue = 1;
         int i = 0;
         while (i < nums.size()) {
