@@ -7,9 +7,7 @@ public:
             if(x > max_candies)
                 max_candies = x;
         }
-        cout << max_candies << endl;
         for(auto x : candies) {
-            cout << x + extraCandies << endl;
             if((x + extraCandies) >= max_candies)
                 ans.push_back(true);
             else
