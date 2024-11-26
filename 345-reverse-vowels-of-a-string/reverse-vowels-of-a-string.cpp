@@ -6,8 +6,6 @@ public:
         int right = s.size() - 1;
 
         bool left_vowel = false, right_vowel = false;
-        int i = left;
-        int j = right/2;
 
         while(left < right) {
             if(check_vowel(s[left], vowels)){
@@ -37,8 +35,6 @@ public:
                 left++;
                 right--;
             }
-
-            i++;
         }
         return s;
     }
