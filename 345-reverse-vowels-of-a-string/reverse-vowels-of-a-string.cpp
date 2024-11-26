@@ -24,11 +24,11 @@ public:
             }
 
             if(left_vowel && right_vowel) {     
-                cout << "found left " << s[left] << endl;     
-                cout << "found right " << s[right] << endl;
+                //cout << "found left " << s[left] << endl;     
+                //cout << "found right " << s[right] << endl;
                 
                 swap(s[left], s[right]);
-                cout << "swapping " << s[left] << " " << s[right] << endl;
+                //cout << "swapping " << s[left] << " " << s[right] << endl;
             
                 left_vowel = false;
                 right_vowel = false;
