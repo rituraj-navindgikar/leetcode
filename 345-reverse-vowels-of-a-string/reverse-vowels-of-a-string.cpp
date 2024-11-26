@@ -1,7 +1,8 @@
 class Solution {
 public:
     string reverseVowels(string s) {
-        char vowels[10] = {'a','e','i','o','u','A','E','I','O','U'};
+        // char vowels[10] = {'a','e','i','o','u','A','E','I','O','U'};
+        string vowels = "aeiouAEIOU";
         int left = 0;
         int right = s.size() - 1;
 
@@ -38,8 +39,8 @@ public:
         }
         return s;
     }
-    bool check_vowel(char s, char vowels[]) {
-        for(int i=0; i<10; i++) {
+    bool check_vowel(char s, string vowels) {
+        for(int i=0; i<vowels.size(); i++) {
             if(s == vowels[i]) {
                 return true;
             }
