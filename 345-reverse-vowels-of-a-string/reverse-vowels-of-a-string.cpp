@@ -2,18 +2,18 @@ class Solution {
 public:
     string reverseVowels(string s) {
         // char vowels[10] = {'a','e','i','o','u','A','E','I','O','U'};
-        string vowels = "aeiouAEIOU";
+        // string vowels = "aeiouAEIOU";
         int left = 0;
         int right = s.size() - 1;
 
         bool left_vowel = false, right_vowel = false;
 
         while(left < right) {
-            if(check_vowel(s[left], vowels)){
+            if(check_vowel(s[left])){
                 left_vowel = true;
             }else left++;
             
-            if(check_vowel(s[right], vowels)) {
+            if(check_vowel(s[right])) {
                 right_vowel = true;
             }else right--;
             
@@ -39,13 +39,9 @@ public:
         }
         return s;
     }
-    bool check_vowel(char s, string vowels) {
-        for(int i=0; i<vowels.size(); i++) {
-            if(s == vowels[i]) {
-                return true;
-            }
-        }
-        return false;
+    bool check_vowel(char s) {
+        s = tolower(s);
+        return s == 'a' || s == 'e' || s == 'i' || s == 'o' || s == 'u';
     }
 };
 
