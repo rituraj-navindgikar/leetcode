@@ -24,7 +24,7 @@ public:
         
         // for string consistency
         if(temp[n-1] != '.') temp += '.';
-        cout << temp << endl;
+        // cout << temp << endl;
         
         i = n - 1;
         string word;
