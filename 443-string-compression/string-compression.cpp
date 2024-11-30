@@ -23,7 +23,7 @@ public:
                 temp.push_back(x);
 
         for(auto x:temp) cout << x;
-        cout << endl;
+        // cout << endl;
         
         chars = temp;
 
