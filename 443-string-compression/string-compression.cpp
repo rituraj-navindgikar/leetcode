@@ -21,10 +21,7 @@ public:
         if(count != 1)
             for(auto x : to_string(count))
                 temp.push_back(x);
-
-        for(auto x:temp) cout << x;
-        // cout << endl;
-        
+                
         chars = temp;
 
         return temp.size();
