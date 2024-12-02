@@ -6,20 +6,20 @@ public:
         int left = 0;
         int right = n-1;
         int distance;
-        int max_vol = 0;
-        int vol;
+        int max_area = 0;
+        int area;
 
         while(left < right) {
             distance = right - left;
-            vol = distance * min(height[left], height[right]);
+            area = distance * min(height[left], height[right]);
             
-            if(vol > max_vol) max_vol = vol;
+            if(area > max_area) max_area = area;
             
             if (height[left] < height[right]) left++;
             else right--;
             
         }
 
-        return max_vol;
+        return max_area;
     }
 };
