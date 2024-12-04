@@ -16,7 +16,7 @@ public:
                 l2--;
             }
             else if(nums[l1] + nums[l2] > k) l2--;
-            else if(nums[l1] + nums[l2] < k) l1++;
+            else l1++;
         }
 
         return count;
