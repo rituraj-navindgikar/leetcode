@@ -4,7 +4,6 @@ public:
         int left_sum = 0;
         int right_sum = 0;
 
-
         for(int x : nums) {
             right_sum += x;
         }
@@ -16,8 +15,6 @@ public:
         }
 
         return -1;
-
-
     }
 };
 
