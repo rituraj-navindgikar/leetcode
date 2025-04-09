@@ -15,10 +15,3 @@ public:
             
     }
 };
-
-/* 
-plan
-
-loop nums
-
-*/
